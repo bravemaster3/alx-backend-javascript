@@ -12,6 +12,5 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
         }
         return (item);
       });
-      console.log(results);
     });
 }
