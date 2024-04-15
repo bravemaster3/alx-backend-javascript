@@ -6,7 +6,7 @@ export default function cleanSet(set, startString) {
   const finalString = myArray
     .filter((x) => x.startsWith(startString))
     .map((x) => x.slice(startString.length))
-    .filter((x) => x.length > 0)
+    .filter((x) => x && x.length)
     .join('-');
   return (finalString);
 }
