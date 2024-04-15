@@ -1,6 +1,6 @@
 export default function cleanSet(set, startString) {
   const myArray = Array.from(set);
-  if (startString.length === 0) {
+  if (!startString || startString.length === 0) {
     return '';
   }
   const finalString = myArray
