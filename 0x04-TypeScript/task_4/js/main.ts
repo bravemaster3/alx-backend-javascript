@@ -1,4 +1,5 @@
-import { Subjects } from './subjects/Subject';
+// import from './subjects/Subject';
+//import * as Subjects from "./subjects/Subject";
 
 export const cpp = new Subjects.Cpp();
 export const java = new Subjects.Java();
