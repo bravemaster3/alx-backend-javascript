@@ -1,7 +1,7 @@
-console.log('Welcome to Holberton School, what is your name?');
-process.stdin.on('data', (data) => {
+process.stdout.write('Welcome to Holberton School, what is your name?\n');
+process.stdin.on('readable', () => {
   const name = process.stdin.read();
-  console.log(`Your name is: ${name}`);
+  process.stdout.write(`Your name is: ${name}`);
   if (!process.stdin.isTTY) {
     console.log('This important software is now closing');
   }
