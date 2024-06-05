@@ -47,10 +47,7 @@ const app = http.createServer((req, res) => {
     res.end('Hello Holberton School!');
   } else if (reqUrl.pathname === '/students') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
-    let { database } = reqUrl.query;
-    if (!database) {
-      database = 'database.csv';
-    }
+    const database = process.argv[2] || 'database.csv';
     countStudents(database)
       .then((result) => {
         res.end(`This is the list of our students\n${result}`);
