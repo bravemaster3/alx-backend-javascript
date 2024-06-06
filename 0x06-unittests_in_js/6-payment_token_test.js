@@ -2,7 +2,7 @@ const chai = require('chai');
 const expect = chai.expect;
 const getPaymentTokenFromAPI = require('./6-payment_token');
 
-describe('getPaymentTokenFromAPI', function() {
+describe('getPaymentTokenFromAPI', () => {
   it('should return a resolved promise with the correct data when success is true', () => new Promise ((done) => {
     // Return the promise directly
     getPaymentTokenFromAPI(true)
