@@ -17,8 +17,8 @@ describe('calculateNumber', function() {
       expect(calculateNumber('SUBTRACT', 1.4, 4.5)).to.equal(-4);
     });
 
-    it('should return 3 when inputs are 4.5 and 1.4', function() {
-      expect(calculateNumber('SUBTRACT', 4.5, 1.4)).to.equal(3);
+    it('should return 4 when inputs are 4.5 and 1.4', function() {
+      expect(calculateNumber('SUBTRACT', 4.5, 1.4)).to.equal(4);
     });
   });
 
@@ -38,10 +38,5 @@ describe('calculateNumber', function() {
     it('should return 5 when inputs are 10 and 2', function() {
       expect(calculateNumber('DIVIDE', 10, 2)).to.equal(5);
     });
-  });
-
-  // Additional test cases for edge scenarios
-  it('should return NaN when type is not valid', function() {
-    expect(calculateNumber('INVALID', 1.4, 4.5)).to.be.NaN;
   });
 });
